@@ -1,0 +1,104 @@
+/*
+Theme Name: The HTML5 Reset Theme
+Theme URI: http://html5reset.org
+Description: A style-free theme to get you started on an HTML5-based WordPress theme of your own.
+Author: Monkey Do! + @ckhicks
+Author URI: http://monkeydo.biz
+Version: 2.0
+*/
+
+.chromeframe {position: absolute; top: 0;}
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+
+/* A Linux- and Windows-friendly sans-serif font stack: http://prospects.mhurrell.co.uk/post/updating-the-helvetica-font-stack */
+body {font: 13px "Open Sans", Helmet, Freesans, sans-serif;}
+
+/* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
+
+/* We like off-black for text. */
+body, select, input, textarea {color: #333; border:1px solid #ccc;}
+
+a {color: #0049b7;}
+a:hover {color: #fb4f4f;}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #fcd700; color: #fff; text-shadow: none;}
+::selection {background: #fcd700; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+input:-moz-placeholder { color:#a9a9a9; }
+textarea:-moz-placeholder { color:#a9a9a9; }
+
+
+/* And here begins the WordPress fun.
+-------------------------------------------------------------------------------*/
+
+#wrapper {max-width: 1200px; margin: 20px auto;padding:0 20px;}
+#header {padding:50px 0 45px;color:#999;text-shadow:1px 1px 1px #eee;}
+article {margin-bottom:60px !important;margin-right:100px;}
+article h2, article .entry-title {font-size:25px;font-weight:bold;line-height:35px;margin:0 0 8px;padding:0 0 5px !important;}
+article .entry, article .entry-content {font-size:15px;padding-top:0 !important;line-height:1.625;margin:0 0 8px;padding:0 0 5px !important;}
+article .entry ul, 
+article .entry-content ul {margin:8px 0 0;}
+article .entry ul li, article .entry-content ul li {background-image: url("./img/bullet.png");background-position: 0.4em 0.5em;background-repeat: no-repeat;padding: 2px 0 2px 2em;}
+article .postmetadata {color:#999;}
+article .postmetadata a {color:#999;}
+article .postmetadata .entry-date {font-size:12px;}
+
+#primary {float:left;width:80%;}
+#sidebar {float:right;width:20%;text-align:left;}
+#sidebar .widget {margin:0 0 35px;}
+#sidebar .widget ul li {line-height:25px;}
+#sidebar .widget .widget-title {font-size:13px !important;padding-bottom:10px;}
+#sidebar .widget_search {padding-bottom:30px;}
+#sidebar .screen-reader-text {display:none;}
+#sidebar #searchsubmit {display:none;}
+#sidebar #s { border: 1px solid #ccc;padding: 4px 6px;resize: none;width:150px;padding: 6px 2px;text-align: right;width: 80%;}
+
+.navigation {padding-right:100px;}
+.navigation .next-posts, .navigation .prev-posts {font-size:20px;font-weight:bold;float:left;}
+.navigation .prev-posts {float:right;}
+
+#respond {padding:25px 0;}
+
+#commentform #comment {height:80px;width:75%;}
+#commentform div {padding:3px 0;}
+#commentform input {border: 1px solid #ccc;padding: 6px 2px;resize: none;width:30%;}
+h2#comments {font-size:20px;text-align:right;padding:0px 0px 15px 0;}
+.commentlist .children {padding-left:50px;margin-top:20px;}
+.commentlist .comment-author .avatar {float:left;border:1px solid #ccc;padding:1px;margin-right:10px;}
+.commentlist .comment-author .says {margin:0 5px;}
+.commentlist .commentmetadata a {color:#999;font-size:10px;}
+.commentlist p {margin-left:40px;font-size:15px;padding:10px 0;}
+.commentlist .reply {margin-left:40px;}
+.commentlist li {margin-bottom:30px;}
+
+#footer {border-top: 1px dashed #ccc;color: #555;font-size: 10px;margin-bottom: 40px;margin-top: 61px;padding: 10px 0 8px;text-align: left;}
+
+.codecolorer {overflow:auto;white-space:normal;}
+
+blockquote {background-color: #002b36;color: #93a1a1;font:13px/1.4em Monaco,Lucida Console,monospace;padding:5px 10px;}
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+}
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Always do mobile-first, and consider using em units: http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw
+
+@media screen and (min-width: 480px) {
+
+} */
